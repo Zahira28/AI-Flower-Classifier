@@ -6,7 +6,7 @@ from PIL import Image
 # Load model (convert your TFJS model to Keras H5 or SavedModel beforehand)
 @st.cache_resource
 def load_model():
-    model = tf.keras.models.load_model("src/flowerclassifierai2.h5")
+    model = tf.keras.models.load_model("flowerclassifierai2.h5")
     return model
 
 model = load_model()
